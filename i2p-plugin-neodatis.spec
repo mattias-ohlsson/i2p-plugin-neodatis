@@ -1,5 +1,6 @@
-Name:		
-Version:	
+Name:		i2p-plugin-neodatis
+# Version from plugin.config
+Version:	2.1-2.14-209-14
 Release:	1%{?dist}
 Summary:	
 
