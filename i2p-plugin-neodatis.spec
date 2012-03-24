@@ -22,7 +22,7 @@ NeoDatis ODB is a very simple Object Database that currently runs on the Java, .
 
 %prep
 %setup -q
-# Extract thw xpi package with 7zip to 01_neodatis
+# Extract the xpi package with 7zip to 01_neodatis
 7za x -o01_neodatis 01_neodatis.xpi2p
 
 
