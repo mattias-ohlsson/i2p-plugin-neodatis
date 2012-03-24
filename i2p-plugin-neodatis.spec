@@ -42,7 +42,7 @@ cp -R 01_neodatis $RPM_BUILD_ROOT/usr/local/i2p/.i2p/plugins/
 # Condrestart i2p and return 0
 /sbin/service i2p condrestart >/dev/null 2>&1 || :
 # Set owner and group to i2p
-chown i2p:i2p -R /usr/local/i2p/.i2p/plugins
+chown i2p:i2p -R /usr/local/i2p/.i2p
 
 
 %postun
