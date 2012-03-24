@@ -11,6 +11,7 @@ URL:		http://sponge.i2p/files/seedless/01_neodatis.xpi2p
 # FIXTHIS: This is a the binary in a archive folder
 Source0:	i2p-plugin-neodatis-%{version}.tar.gz
 BuildRoot:	%(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
+BuildArch:	noarch
 
 BuildRequires:	p7zip
 Requires:	i2p
