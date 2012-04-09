@@ -1,7 +1,7 @@
 Name:		i2p-plugin-neodatis
 # Version from plugin.config (shortened)
 Version:	2.1
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	NeoDatis object database plugin for I2P	
 
 Group:		Applications/Internet
@@ -28,6 +28,11 @@ NeoDatis ODB is a very simple Object Database that currently runs on the Java, .
 
 %build
 # This is a binary
+
+# Disable automatic update
+sed -i \
+  -e 's|updateURL=|#DISABLED (rpm package): updateURL=|g' \
+  01_neodatis/plugin.config
 
 
 %install
@@ -61,5 +66,8 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Mon Apr 9 2012 Mattias Ohlsson <mattias.ohlsson@inprose.com> - 2.1-2
+- Disable automatic update
+
 * Sat Mar 24 2012 Mattias Ohlsson <mattias.ohlsson@inprose.com> - 2.1-1
 - Initial package
