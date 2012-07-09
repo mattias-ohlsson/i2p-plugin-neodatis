@@ -1,7 +1,7 @@
 Name:		i2p-plugin-neodatis
-# Version from plugin.config (shortened)
+# Version from plugin.config (2.1-2.14-209-16)
 Version:	2.1
-Release:	2%{?dist}
+Release:	2.14.209.16.1%{?dist}
 Summary:	NeoDatis object database plugin for I2P	
 
 Group:		Applications/Internet
@@ -66,6 +66,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Mon Jul 9 2012 Mattias Ohlsson <mattias.ohlsson@inprose.com> - 2.1-2.14.209.16.1
+- New version
+
 * Mon Apr 9 2012 Mattias Ohlsson <mattias.ohlsson@inprose.com> - 2.1-2
 - Disable automatic update
 
